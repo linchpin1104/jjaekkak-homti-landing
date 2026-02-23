@@ -1,0 +1,253 @@
+/* 부모용 페이지 스타일 - 노란색 톤 */
+
+:root {
+    --parent-primary: #FFD93D;
+    --parent-secondary: #FFC837;
+    --parent-dark: #333;
+    --parent-light: #FFF9E6;
+}
+
+body.parent-page {
+    background: linear-gradient(180deg, #FFFBF0 0%, #FFFFFF 100%);
+}
+
+/* 히어로 섹션 - 부모용 */
+.hero.parent-hero {
+    background: linear-gradient(180deg, #FFF9E6 0%, #FFFFFF 100%);
+    position: relative;
+}
+
+.hero.parent-hero::before {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(255, 217, 61, 0.3) 0%, transparent 70%);
+    z-index: 0;
+}
+
+.hero-title.parent-title {
+    color: #333;
+}
+
+.hero-title.parent-title .highlight {
+    color: #FFB800;
+    position: relative;
+}
+
+.btn-parent-primary {
+    background: linear-gradient(135deg, #FFD93D 0%, #FFC837 100%);
+    color: #333;
+    font-weight: 800;
+}
+
+.btn-parent-primary:hover {
+    background: linear-gradient(135deg, #FFC837 0%, #FFB800 100%);
+}
+
+/* 문제 섹션 */
+.problem-section {
+    background: white;
+    padding: 60px 20px;
+}
+
+.problem-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.problem-card {
+    background: #F8F9FA;
+    border-radius: 16px;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 500px;
+    text-align: left;
+    border-left: 4px solid #FFD93D;
+}
+
+.problem-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.problem-card p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* 솔루션 섹션 */
+.solution-section {
+    background: linear-gradient(180deg, #FFF9E6 0%, #FFFFFF 100%);
+    padding: 60px 20px;
+}
+
+.solution-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.solution-subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.solution-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.solution-item {
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(255, 217, 61, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.solution-item:hover {
+    transform: translateY(-5px);
+}
+
+.solution-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.solution-item h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.solution-item p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* 혜택 섹션 */
+.benefit-section {
+    background: white;
+    padding: 60px 20px;
+}
+
+.benefit-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.benefit-card {
+    background: #FFF9E6;
+    border-radius: 12px;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.benefit-card .icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.benefit-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.benefit-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* CTA 섹션 */
+.cta-section.parent-cta {
+    background: linear-gradient(135deg, #FFD93D 0%, #FFC837 100%);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.cta-title {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.cta-description {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.promotion-badge {
+    background: white;
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFB800;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* FAQ 섹션 */
+.faq-section {
+    background: white;
+    padding: 60px 20px;
+}
+
+.faq-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.faq-item {
+    max-width: 700px;
+    margin: 20px auto;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.faq-question {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.faq-answer {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+}

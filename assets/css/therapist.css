@@ -1,0 +1,312 @@
+/* 치료사용 페이지 스타일 - 청록색 톤 */
+
+:root {
+    --therapist-primary: #4ECDC4;
+    --therapist-secondary: #44B8B0;
+    --therapist-dark: #333;
+    --therapist-light: #E8F8F7;
+}
+
+body.therapist-page {
+    background: linear-gradient(180deg, #F0FFFE 0%, #FFFFFF 100%);
+}
+
+/* 히어로 섹션 - 치료사용 */
+.hero.therapist-hero {
+    background: linear-gradient(180deg, #E8F8F7 0%, #FFFFFF 100%);
+    position: relative;
+}
+
+.hero.therapist-hero::before {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(78, 205, 196, 0.3) 0%, transparent 70%);
+    z-index: 0;
+}
+
+.hero-title.therapist-title {
+    color: #333;
+}
+
+.hero-title.therapist-title .highlight {
+    color: #4ECDC4;
+    position: relative;
+}
+
+.btn-therapist-primary {
+    background: linear-gradient(135deg, #4ECDC4 0%, #44B8B0 100%);
+    color: white;
+    font-weight: 800;
+}
+
+.btn-therapist-primary:hover {
+    background: linear-gradient(135deg, #44B8B0 0%, #3AA8A0 100%);
+}
+
+/* 문제 섹션 */
+.problem-section {
+    background: white;
+    padding: 60px 20px;
+}
+
+.problem-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.problem-card {
+    background: #F8F9FA;
+    border-radius: 16px;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 500px;
+    text-align: left;
+    border-left: 4px solid #4ECDC4;
+}
+
+.problem-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.problem-card p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* 솔루션 섹션 */
+.solution-section {
+    background: linear-gradient(180deg, #E8F8F7 0%, #FFFFFF 100%);
+    padding: 60px 20px;
+}
+
+.solution-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.solution-subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.solution-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.solution-item {
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(78, 205, 196, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.solution-item:hover {
+    transform: translateY(-5px);
+}
+
+.solution-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.solution-item h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.solution-item p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* 혜택 섹션 */
+.benefit-section {
+    background: white;
+    padding: 60px 20px;
+}
+
+.benefit-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.benefit-card {
+    background: #E8F8F7;
+    border-radius: 12px;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.benefit-card .icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.benefit-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.benefit-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* 수입 계산기 섹션 */
+.calculator-section {
+    background: linear-gradient(135deg, #4ECDC4 0%, #44B8B0 100%);
+    padding: 60px 20px;
+    color: white;
+}
+
+.calculator-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.calculator-card {
+    background: white;
+    border-radius: 16px;
+    padding: 40px;
+    max-width: 500px;
+    margin: 30px auto;
+    color: #333;
+}
+
+.income-example {
+    text-align: left;
+    margin: 20px 0;
+}
+
+.income-example h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #4ECDC4;
+}
+
+.income-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.income-row:last-child {
+    border-bottom: none;
+    font-weight: 700;
+    font-size: 20px;
+    color: #4ECDC4;
+    padding-top: 20px;
+    border-top: 2px solid #4ECDC4;
+}
+
+/* CTA 섹션 */
+.cta-section.therapist-cta {
+    background: linear-gradient(135deg, #4ECDC4 0%, #44B8B0 100%);
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+}
+
+.cta-title {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.cta-description {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.promotion-badge {
+    background: white;
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #4ECDC4;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.btn-white {
+    background: white;
+    color: #4ECDC4;
+    font-weight: 800;
+}
+
+.btn-white:hover {
+    background: #f0f0f0;
+}
+
+/* FAQ 섹션 */
+.faq-section {
+    background: white;
+    padding: 60px 20px;
+}
+
+.faq-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.faq-item {
+    max-width: 700px;
+    margin: 20px auto;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.faq-question {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.faq-answer {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>째깍홈티 - 발달재활 홈티 매칭 플랫폼</title>
+    <meta name="description" content="우리 아이에게 꼭 맞는 발달재활 치료사를 만나보세요. 센터 대기 없이 집에서 시작하는 전문 치료.">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(135deg, #FFD93D 0%, #4ECDC4 100%);
+        }
+
+        .main-container {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .selector-wrapper {
+            max-width: 1000px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .main-title {
+            font-size: 48px;
+            font-weight: 800;
+            color: white;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .main-subtitle {
+            font-size: 20px;
+            color: white;
+            margin-bottom: 60px;
+            line-height: 1.6;
+            opacity: 0.95;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .selection-card {
+            background: white;
+            border-radius: 24px;
+            padding: 50px 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: block;
+        }
+
+        .selection-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 50px rgba(0,0,0,0.25);
+        }
+
+        .card-icon {
+            font-size: 72px;
+            margin-bottom: 20px;
+            filter: drop-shadow(0 2px 8px rgba(0,0,0,0.1));
+        }
+
+        .parent-card .card-icon {
+            filter: drop-shadow(0 2px 8px rgba(255, 217, 61, 0.5));
+        }
+
+        .therapist-card .card-icon {
+            filter: drop-shadow(0 2px 8px rgba(78, 205, 196, 0.5));
+        }
+
+        .card-title {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: #333;
+        }
+
+        .parent-card .card-title {
+            color: #FFB800;
+        }
+
+        .therapist-card .card-title {
+            color: #4ECDC4;
+        }
+
+        .card-description {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .card-button {
+            display: inline-block;
+            padding: 15px 35px;
+            font-size: 16px;
+            font-weight: 700;
+            border-radius: 12px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .parent-card .card-button {
+            background: linear-gradient(135deg, #FFD93D 0%, #FFC837 100%);
+            color: #333;
+        }
+
+        .parent-card .card-button:hover {
+            background: linear-gradient(135deg, #FFC837 0%, #FFB800 100%);
+        }
+
+        .therapist-card .card-button {
+            background: linear-gradient(135deg, #4ECDC4 0%, #44B8B0 100%);
+            color: white;
+        }
+
+        .therapist-card .card-button:hover {
+            background: linear-gradient(135deg, #44B8B0 0%, #3AA8A0 100%);
+        }
+
+        .footer-simple {
+            text-align: center;
+            padding: 30px 20px;
+            color: white;
+            font-size: 14px;
+        }
+
+        .footer-simple p {
+            margin: 5px 0;
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            .main-title {
+                font-size: 36px;
+            }
+
+            .main-subtitle {
+                font-size: 16px;
+                margin-bottom: 40px;
+            }
+
+            .card-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .selection-card {
+                padding: 40px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 메인 컨테이너 -->
+    <div class="main-container">
+        <div class="selector-wrapper">
+            <h1 class="main-title">째깍홈티</h1>
+            <p class="main-subtitle">
+                발달재활 홈티 매칭 플랫폼<br>
+                어떤 서비스를 찾고 계신가요?
+            </p>
+
+            <div class="card-grid">
+                <!-- 부모 카드 -->
+                <a href="./parent/index.html" class="selection-card parent-card">
+                    <div class="card-icon">👶</div>
+                    <h2 class="card-title">부모님</h2>
+                    <p class="card-description">
+                        우리 아이에게 맞는<br>
+                        검증된 발달재활 치료사를<br>
+                        찾고 계신가요?
+                    </p>
+                    <div class="card-button">
+                        치료사 찾기
+                    </div>
+                </a>
+
+                <!-- 치료사 카드 -->
+                <a href="./therapist/index.html" class="selection-card therapist-card">
+                    <div class="card-icon">👨‍⚕️</div>
+                    <h2 class="card-title">치료사님</h2>
+                    <p class="card-description">
+                        영업 부담 없이<br>
+                        내 전문성에 맞는 케이스만<br>
+                        받고 싶으신가요?
+                    </p>
+                    <div class="card-button">
+                        치료사 지원하기
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 푸터 -->
+    <footer class="footer-simple">
+        <p><strong>째깍홈티 by 째깍악어</strong></p>
+        <p>고객센터: contact@jjaekkak.com</p>
+        <p>© 2025 째깍홈티. All rights reserved.</p>
+    </footer>
+</body>
+</html>

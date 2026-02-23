@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부모 신청서 - 째깍홈티</title>
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/parent.css">
+    <link rel="stylesheet" href="../assets/css/form.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+</head>
+<body class="parent-page">
+    <!-- 헤더 -->
+    <header class="header">
+        <div class="logo">째깍홈티 X 째깍악어</div>
+    </header>
+
+    <!-- 폼 컨테이너 -->
+    <div class="form-container">
+        <!-- 폼 헤더 -->
+        <div class="form-header">
+            <h1 class="form-title">무료 상담 신청</h1>
+            <p class="form-subtitle">
+                아이의 상황을 알려주시면<br>
+                24시간 내 운영팀이 연락드려 상담을 진행합니다.
+            </p>
+        </div>
+
+        <!-- 신청 폼 -->
+        <form id="parentApplicationForm" class="application-form">
+            <!-- 섹션 1: 보호자 정보 -->
+            <div class="form-section">
+                <h2 class="section-title">보호자 정보</h2>
+                
+                <div class="form-group">
+                    <label class="form-label" for="parentName">
+                        성함 <span class="required">*</span>
+                    </label>
+                    <input 
+                        type="text" 
+                        id="parentName" 
+                        name="parentName" 
+                        class="form-input" 
+                        placeholder="홍길동" 
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="parentPhone">
+                        연락처 <span class="required">*</span>
+                    </label>
+                    <input 
+                        type="tel" 
+                        id="parentPhone" 
+                        name="parentPhone" 
+                        class="form-input" 
+                        placeholder="010-1234-5678" 
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="contactMethod">
+                        선호하는 연락 방법 <span class="required">*</span>
+                    </label>
+                    <div class="radio-group">
+                        <div class="radio-item">
+                            <input type="radio" id="contactPhone" name="contactMethod" value="전화" checked>
+                            <label for="contactPhone">전화</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="contactKakao" name="contactMethod" value="카카오톡">
+                            <label for="contactKakao">카카오톡</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="contactBoth" name="contactMethod" value="상관없음">
+                            <label for="contactBoth">상관없음</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="kakaoId">
+                        카카오톡 ID
+                    </label>
+                    <input 
+                        type="text" 
+                        id="kakaoId" 
+                        name="kakaoId" 
+                        class="form-input" 
+                        placeholder="카카오톡 ID (선택)"
+                    >
+                    <p class="form-help">카카오톡으로 상담 원하시면 입력해주세요</p>
+                </div>
+            </div>
+
+            <!-- 섹션 2: 아이 정보 -->
+            <div class="form-section">
+                <h2 class="section-title">아이 정보</h2>
+                
+                <div class="form-group">
+                    <label class="form-label" for="childAge">
+                        아이 나이 <span class="required">*</span>
+                    </label>
+                    <select id="childAge" name="childAge" class="form-select" required>
+                        <option value="">선택해주세요</option>
+                        <option value="만 2세 이하">만 2세 이하</option>
+                        <option value="만 3세">만 3세</option>
+                        <option value="만 4세">만 4세</option>
+                        <option value="만 5세">만 5세</option>
+                        <option value="만 6세">만 6세</option>
+                        <option value="만 7세">만 7세</option>
+                        <option value="만 8세">만 8세</option>
+                        <option value="만 9세">만 9세</option>
+                        <option value="만 10세 이상">만 10세 이상</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="diagnosis">
+                        진단명 또는 의심 증상 <span class="required">*</span>
+                    </label>
+                    <input 
+                        type="text" 
+                        id="diagnosis" 
+                        name="diagnosis" 
+                        class="form-input" 
+                        placeholder="예: 자폐스펙트럼, 언어발달지연, ADHD 등" 
+                        required
+                    >
+                    <p class="form-help">정확한 진단명이 없어도 괜찮습니다</p>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="currentIssue">
+                        현재 어떤 부분이 가장 걱정되시나요? <span class="required">*</span>
+                    </label>
+                    <textarea 
+                        id="currentIssue" 
+                        name="currentIssue" 
+                        class="form-textarea" 
+                        placeholder="예: 또래에 비해 말이 늦고, 눈 맞춤이 어려워요"
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">
+                        현재 받고 있는 치료가 있나요?
+                    </label>
+                    <div class="radio-group">
+                        <div class="radio-item">
+                            <input type="radio" id="currentTreatmentYes" name="currentTreatment" value="예" checked>
+                            <label for="currentTreatmentYes">예</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="currentTreatmentNo" name="currentTreatment" value="아니오">
+                            <label for="currentTreatmentNo">아니오</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group" id="treatmentDetailGroup">
+                    <label class="form-label" for="treatmentDetail">
+                        받고 있는 치료 종류
+                    </label>
+                    <input 
+                        type="text" 
+                        id="treatmentDetail" 
+                        name="treatmentDetail" 
+                        class="form-input" 
+                        placeholder="예: 언어치료 주 2회, 감각통합 주 1회"
+                    >
+                </div>
+            </div>
+
+            <!-- 섹션 3: 희망 치료 정보 -->
+            <div class="form-section">
+                <h2 class="section-title">희망 치료 정보</h2>
+                
+                <div class="form-group">
+                    <label class="form-label">
+                        어떤 치료를 원하시나요? <span class="required">*</span>
+                    </label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="therapy1" name="therapyType" value="언어치료">
+                            <label for="therapy1">언어치료</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="therapy2" name="therapyType" value="놀이치료">
+                            <label for="therapy2">놀이치료</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="therapy3" name="therapyType" value="인지치료">
+                            <label for="therapy3">인지치료</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="therapy4" name="therapyType" value="감각통합치료">
+                            <label for="therapy4">감각통합치료</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="therapy5" name="therapyType" value="미술치료">
+                            <label for="therapy5">미술치료</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="therapy6" name="therapyType" value="기타">
+                            <label for="therapy6">기타 (잘 모르겠어요, 상담 시 결정)</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="frequency">
+                        희망 수업 빈도 <span class="required">*</span>
+                    </label>
+                    <select id="frequency" name="frequency" class="form-select" required>
+                        <option value="">선택해주세요</option>
+                        <option value="주 1회">주 1회</option>
+                        <option value="주 2회">주 2회</option>
+                        <option value="주 3회">주 3회</option>
+                        <option value="주 4회 이상">주 4회 이상</option>
+                        <option value="상담 후 결정">상담 후 결정</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">
+                        가능한 요일 <span class="required">*</span>
+                    </label>
+                    <div class="time-selection">
+                        <div class="time-chip" onclick="toggleChip(this)">
+                            <input type="checkbox" id="day1" name="availableDays" value="월">
+                            <label for="day1">월</label>
+                        </div>
+                        <div class="time-chip" onclick="toggleChip(this)">
+                            <input type="checkbox" id="day2" name="availableDays" value="화">
+                            <label for="day2">화</label>
+                        </div>
+                        <div class="time-chip" onclick="toggleChip(this)">
+                            <input type="checkbox" id="day3" name="availableDays" value="수">
+                            <label for="day3">수</label>
+                        </div>
+                        <div class="time-chip" onclick="toggleChip(this)">
+                            <input type="checkbox" id="day4" name="availableDays" value="목">
+                            <label for="day4">목</label>
+                        </div>
+                        <div class="time-chip" onclick="toggleChip(this)">
+                            <input type="checkbox" id="day5" name="availableDays" value="금">
+                            <label for="day5">금</label>
+                        </div>
+                        <div class="time-chip" onclick="toggleChip(this)">
+                            <input type="checkbox" id="day6" name="availableDays" value="토">
+                            <label for="day6">토</label>
+                        </div>
+                        <div class="time-chip" onclick="toggleChip(this)">
+                            <input type="checkbox" id="day7" name="availableDays" value="일">
+                            <label for="day7">일</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">
+                        가능한 시간대 <span class="required">*</span>
+                    </label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="time1" name="availableTime" value="오전 (9-12시)">
+                            <label for="time1">오전 (9-12시)</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="time2" name="availableTime" value="오후 초반 (12-3시)">
+                            <label for="time2">오후 초반 (12-3시)</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="time3" name="availableTime" value="오후 (3-6시)">
+                            <label for="time3">오후 (3-6시)</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="time4" name="availableTime" value="저녁 (6-9시)">
+                            <label for="time4">저녁 (6-9시)</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="startDate">
+                        언제부터 시작하고 싶으신가요? <span class="required">*</span>
+                    </label>
+                    <select id="startDate" name="startDate" class="form-select" required>
+                        <option value="">선택해주세요</option>
+                        <option value="최대한 빨리">최대한 빨리</option>
+                        <option value="1-2주 내">1-2주 내</option>
+                        <option value="3-4주 내">3-4주 내</option>
+                        <option value="1개월 이후">1개월 이후</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="location">
+                        거주 지역 <span class="required">*</span>
+                    </label>
+                    <input 
+                        type="text" 
+                        id="location" 
+                        name="location" 
+                        class="form-input" 
+                        placeholder="예: 서울 강남구, 경기 성남시 등" 
+                        required
+                    >
+                    <p class="form-help">동까지는 상담 시 알려주셔도 괜찮습니다</p>
+                </div>
+            </div>
+
+            <!-- 섹션 4: 추가 정보 -->
+            <div class="form-section">
+                <h2 class="section-title">추가 정보</h2>
+                
+                <div class="form-group">
+                    <label class="form-label" for="additionalInfo">
+                        치료사에게 미리 알려주고 싶은 내용이 있나요?
+                    </label>
+                    <textarea 
+                        id="additionalInfo" 
+                        name="additionalInfo" 
+                        class="form-textarea" 
+                        placeholder="예: 낯을 많이 가려요, 특정 소리에 예민해요 등"
+                    ></textarea>
+                    <p class="form-help">선택사항이지만, 작성하시면 더 적합한 매칭에 도움이 됩니다</p>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="howKnow">
+                        째깍홈티를 어떻게 알게 되셨나요?
+                    </label>
+                    <select id="howKnow" name="howKnow" class="form-select">
+                        <option value="">선택해주세요</option>
+                        <option value="검색">검색</option>
+                        <option value="카페/커뮤니티">카페/커뮤니티</option>
+                        <option value="지인 추천">지인 추천</option>
+                        <option value="째깍악어 이용자">째깍악어 이용자</option>
+                        <option value="기타">기타</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- 약관 동의 -->
+            <div class="terms-section">
+                <div class="terms-item">
+                    <input type="checkbox" id="terms1" name="terms1" required>
+                    <label for="terms1">
+                        [필수] 개인정보 수집 및 이용 동의
+                        <a href="#" class="terms-link">(보기)</a>
+                    </label>
+                </div>
+                <div class="terms-item">
+                    <input type="checkbox" id="terms2" name="terms2" required>
+                    <label for="terms2">
+                        [필수] 이용약관 동의
+                        <a href="#" class="terms-link">(보기)</a>
+                    </label>
+                </div>
+                <div class="terms-item">
+                    <input type="checkbox" id="terms3" name="terms3">
+                    <label for="terms3">
+                        [선택] 마케팅 정보 수신 동의 (이벤트, 프로모션 안내)
+                    </label>
+                </div>
+            </div>
+
+            <!-- 제출 버튼 -->
+            <div class="form-submit">
+                <button type="submit" class="submit-button">
+                    무료 상담 신청하기
+                </button>
+            </div>
+        </form>
+
+        <!-- 성공 메시지 -->
+        <div id="successMessage" class="success-message">
+            <div class="success-icon">✅</div>
+            <h2 class="success-title">신청이 완료되었습니다!</h2>
+            <p class="success-description">
+                24시간 내 운영팀이 연락드릴 예정입니다.<br>
+                등록하신 연락처로 연락드리니 조금만 기다려주세요.
+            </p>
+            <a href="./index.html" class="btn btn-parent-primary">
+                홈으로 돌아가기
+            </a>
+        </div>
+    </div>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <p><strong>째깍홈티 by 째깍악어</strong></p>
+        <p>고객센터: contact@jjaekkak.com</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/form-handler.js"></script>
+    <script>
+        // 칩 토글 함수
+        function toggleChip(chip) {
+            chip.classList.toggle('checked');
+            const checkbox = chip.querySelector('input[type="checkbox"]');
+            checkbox.checked = !checkbox.checked;
+        }
+
+        // 치료 유무에 따른 상세 필드 표시/숨김
+        document.querySelectorAll('input[name="currentTreatment"]').forEach(radio => {
+            radio.addEventListener('change', function() {
+                const detailGroup = document.getElementById('treatmentDetailGroup');
+                if (this.value === '예') {
+                    detailGroup.style.display = 'block';
+                } else {
+                    detailGroup.style.display = 'none';
+                }
+            });
+        });
+
+        // 폼 제출 핸들러
+        document.getElementById('parentApplicationForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            // 버튼 비활성화
+            const submitBtn = this.querySelector('.submit-button');
+            const originalText = submitBtn.textContent;
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<span class="spinner"></span> 전송 중...';
+            
+            try {
+                // 폼 데이터 수집
+                const formData = new FormData(this);
+                const data = {};
+                
+                // 기본 필드
+                for (let [key, value] of formData.entries()) {
+                    if (key === 'therapyType' || key === 'availableDays' || key === 'availableTime') {
+                        if (!data[key]) data[key] = [];
+                        data[key].push(value);
+                    } else {
+                        data[key] = value;
+                    }
+                }
+                
+                // 배열 필드를 문자열로 변환
+                if (data.therapyType) data.therapyType = data.therapyType.join(', ');
+                if (data.availableDays) data.availableDays = data.availableDays.join(', ');
+                if (data.availableTime) data.availableTime = data.availableTime.join(', ');
+                
+                // 타임스탬프 추가
+                data.timestamp = new Date().toLocaleString('ko-KR');
+                data.formType = '부모';
+                
+                // Google Sheets로 전송
+                await submitToGoogleSheets(data, 'parent');
+                
+                // 성공 처리
+                document.querySelector('.application-form').style.display = 'none';
+                document.getElementById('successMessage').classList.add('show');
+                window.scrollTo(0, 0);
+                
+            } catch (error) {
+                alert('신청 중 오류가 발생했습니다. 다시 시도해주세요.');
+                console.error('Error:', error);
+                
+                // 버튼 복원
+                submitBtn.disabled = false;
+                submitBtn.textContent = originalText;
+            }
+        });
+    </script>
+</body>
+</html>
