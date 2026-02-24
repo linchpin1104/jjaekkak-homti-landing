@@ -7,7 +7,7 @@
  */
 
 // ⚠️ 중요: Google Apps Script 웹 앱 배포 URL을 여기에 입력하세요
-const GOOGLE_SCRIPT_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE';
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzdyFDihJlYeEBi4H_1-P6plN6o_BVCfvSFwtoG7orzWZbBHrWboHeAgjfIO3-BE2f1/exec';
 
 /**
  * Google Sheets로 데이터 전송
