@@ -24,6 +24,19 @@
     line-height: 1.6;
 }
 
+.form-hook-message {
+    margin-top: 20px;
+    padding: 16px 20px;
+    background: linear-gradient(135deg, #FFF9E6 0%, #FFF3CC 100%);
+    border-left: 4px solid #FFB800;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #856404;
+    text-align: center;
+    line-height: 1.6;
+}
+
 .application-form {
     background: white;
     border-radius: 16px;
