@@ -35,12 +35,24 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
+    text-align: center;
 }
 
 .logo {
+    display: inline-block;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+    display: block;
+}
+
+.logo-text {
     font-size: 18px;
     font-weight: 700;
     color: #333;
+    text-decoration: none;
 }
 
 /* 히어로 섹션 */
