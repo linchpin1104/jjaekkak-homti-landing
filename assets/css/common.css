@@ -29,7 +29,7 @@ body {
 
 /* 헤더 */
 .header {
-    padding: 16px 20px;
+    padding: 14px 20px;
     background: white;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     position: sticky;
@@ -43,9 +43,16 @@ body {
 }
 
 .logo img {
-    height: 24px;
+    height: 20px;
     width: auto;
     display: block;
+}
+
+/* 태블릿 이상 */
+@media (min-width: 769px) {
+    .logo img {
+        height: 22px;
+    }
 }
 
 .logo-text {
