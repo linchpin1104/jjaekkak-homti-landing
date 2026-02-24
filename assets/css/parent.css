@@ -59,6 +59,7 @@ body.parent-page {
     font-weight: 700;
     margin-bottom: 40px;
     color: #333;
+    text-align: center;
 }
 
 .problem-card {
@@ -95,12 +96,14 @@ body.parent-page {
     font-weight: 700;
     margin-bottom: 20px;
     color: #333;
+    text-align: center;
 }
 
 .solution-subtitle {
     font-size: 18px;
     color: #666;
     margin-bottom: 40px;
+    text-align: center;
 }
 
 .solution-grid {
@@ -152,6 +155,7 @@ body.parent-page {
     font-weight: 700;
     margin-bottom: 40px;
     color: #333;
+    text-align: center;
 }
 
 .benefit-grid {
@@ -198,12 +202,14 @@ body.parent-page {
     font-weight: 800;
     margin-bottom: 20px;
     color: #333;
+    text-align: center;
 }
 
 .cta-description {
     font-size: 18px;
     margin-bottom: 40px;
     color: #555;
+    text-align: center;
 }
 
 .promotion-badge {
@@ -229,6 +235,7 @@ body.parent-page {
     font-weight: 700;
     margin-bottom: 40px;
     color: #333;
+    text-align: center;
 }
 
 .faq-item {

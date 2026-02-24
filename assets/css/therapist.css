@@ -59,6 +59,7 @@ body.therapist-page {
     font-weight: 700;
     margin-bottom: 40px;
     color: #333;
+    text-align: center;
 }
 
 .problem-card {
@@ -95,12 +96,14 @@ body.therapist-page {
     font-weight: 700;
     margin-bottom: 20px;
     color: #333;
+    text-align: center;
 }
 
 .solution-subtitle {
     font-size: 18px;
     color: #666;
     margin-bottom: 40px;
+    text-align: center;
 }
 
 .solution-grid {
@@ -152,6 +155,7 @@ body.therapist-page {
     font-weight: 700;
     margin-bottom: 40px;
     color: #333;
+    text-align: center;
 }
 
 .benefit-grid {
@@ -197,6 +201,7 @@ body.therapist-page {
     font-size: 28px;
     font-weight: 700;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .calculator-card {
@@ -248,11 +253,13 @@ body.therapist-page {
     font-size: 32px;
     font-weight: 800;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .cta-description {
     font-size: 18px;
     margin-bottom: 40px;
+    text-align: center;
 }
 
 .promotion-badge {
@@ -288,6 +295,7 @@ body.therapist-page {
     font-weight: 700;
     margin-bottom: 40px;
     color: #333;
+    text-align: center;
 }
 
 .faq-item {
