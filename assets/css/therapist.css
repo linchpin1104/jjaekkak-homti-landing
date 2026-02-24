@@ -17,6 +17,11 @@ body.therapist-page {
     position: relative;
 }
 
+.hero.therapist-hero > * {
+    position: relative;
+    z-index: 1;
+}
+
 .hero.therapist-hero::before {
     content: '';
     position: absolute;

@@ -17,6 +17,11 @@ body.parent-page {
     position: relative;
 }
 
+.hero.parent-hero > * {
+    position: relative;
+    z-index: 1;
+}
+
 .hero.parent-hero::before {
     content: '';
     position: absolute;
