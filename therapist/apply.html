@@ -3,13 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>치료사 지원서 - 째깍홈티</title>
+    <title>홈티 선생님 지원서 - 째깍홈티</title>
     <link rel="stylesheet" href="../assets/css/common.css">
     <link rel="stylesheet" href="../assets/css/therapist.css">
     <link rel="stylesheet" href="../assets/css/form.css">
+    <link rel="stylesheet" href="../assets/css/banner.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
 </head>
 <body class="therapist-page">
+    <!-- 사전신청 배너 -->
+    <div class="promo-banner">
+        <div class="promo-banner-content">
+            <span class="promo-emoji">🎉</span>
+            <span class="promo-text">
+                <span class="promo-highlight">베타테스트 오픈 3월 22일</span>
+                사전등록 시 첫 3개월
+                <span class="promo-highlight">수수료 100% 무료</span>
+            </span>
+        </div>
+    </div>
+
     <!-- 헤더 -->
     <header class="header">
         <div class="logo">째깍홈티 X 째깍악어</div>
@@ -19,10 +32,10 @@
     <div class="form-container">
         <!-- 폼 헤더 -->
         <div class="form-header">
-            <h1 class="form-title">치료사 지원하기</h1>
+            <h1 class="form-title">서비스 오픈 알림 신청</h1>
             <p class="form-subtitle">
-                선생님의 전문성을 알려주시면<br>
-                검증 후 적합한 케이스를 매칭해드립니다.
+                선생님의 정보를 남겨주시면<br>
+                서비스 오픈 시 가장 먼저 연락드리겠습니다.
             </p>
         </div>
 
@@ -144,16 +157,16 @@
                             <label for="cert2">임상심리사</label>
                         </div>
                         <div class="checkbox-item">
-                            <input type="checkbox" id="cert3" name="certification" value="놀이치료사">
-                            <label for="cert3">놀이치료사</label>
+                            <input type="checkbox" id="cert3" name="certification" value="놀이전문가">
+                            <label for="cert3">놀이전문가</label>
                         </div>
                         <div class="checkbox-item">
-                            <input type="checkbox" id="cert4" name="certification" value="미술치료사">
-                            <label for="cert4">미술치료사</label>
+                            <input type="checkbox" id="cert4" name="certification" value="미술전문가">
+                            <label for="cert4">미술전문가</label>
                         </div>
                         <div class="checkbox-item">
-                            <input type="checkbox" id="cert5" name="certification" value="작업치료사">
-                            <label for="cert5">작업치료사</label>
+                            <input type="checkbox" id="cert5" name="certification" value="작업전문가/감각통합">
+                            <label for="cert5">작업전문가/감각통합</label>
                         </div>
                         <div class="checkbox-item">
                             <input type="checkbox" id="cert6" name="certification" value="특수교사">
@@ -174,7 +187,7 @@
                         id="certificationDetail" 
                         name="certificationDetail" 
                         class="form-textarea" 
-                        placeholder="예: 언어재활사 2급 (2020년 취득), 놀이치료사 1급 (2018년 취득)"
+                        placeholder="예: 언어재활사 2급 (2020년 취득), 놀이전문가 1급 (2018년 취득)"
                     ></textarea>
                     <p class="form-help">급수, 취득 연도, 발급 기관 등을 입력해주세요</p>
                 </div>
@@ -208,7 +221,7 @@
 
                 <div class="form-group">
                     <label class="form-label" for="experienceYears">
-                        소아 치료 경력 (년) <span class="required">*</span>
+                        소아 발달 지도 경력 (년) <span class="required">*</span>
                     </label>
                     <select id="experienceYears" name="experienceYears" class="form-select" required>
                         <option value="">선택해주세요</option>
@@ -229,7 +242,7 @@
                         id="careerDetail" 
                         name="careerDetail" 
                         class="form-textarea" 
-                        placeholder="예: OO발달센터 언어치료사 (2020-2023), 프리랜서 홈티 (2023-현재)"
+                        placeholder="예: OO발달센터 언어 선생님 (2020-2023), 프리랜서 홈티 (2023-현재)"
                         required
                     ></textarea>
                     <p class="form-help">근무했던 센터, 기간, 담당 업무 등을 구체적으로 작성해주세요</p>
@@ -258,28 +271,28 @@
                 
                 <div class="form-group">
                     <label class="form-label">
-                        제공 가능한 치료 <span class="required">*</span>
+                        제공 가능한 홈티 수업 <span class="required">*</span>
                     </label>
                     <div class="checkbox-group">
                         <div class="checkbox-item">
-                            <input type="checkbox" id="therapy1" name="therapyType" value="언어치료">
-                            <label for="therapy1">언어치료</label>
+                            <input type="checkbox" id="therapy1" name="therapyType" value="언어 홈티">
+                            <label for="therapy1">언어 홈티</label>
                         </div>
                         <div class="checkbox-item">
-                            <input type="checkbox" id="therapy2" name="therapyType" value="놀이치료">
-                            <label for="therapy2">놀이치료</label>
+                            <input type="checkbox" id="therapy2" name="therapyType" value="놀이 홈티">
+                            <label for="therapy2">놀이 홈티</label>
                         </div>
                         <div class="checkbox-item">
-                            <input type="checkbox" id="therapy3" name="therapyType" value="인지치료">
-                            <label for="therapy3">인지치료</label>
+                            <input type="checkbox" id="therapy3" name="therapyType" value="인지 홈티">
+                            <label for="therapy3">인지 홈티</label>
                         </div>
                         <div class="checkbox-item">
-                            <input type="checkbox" id="therapy4" name="therapyType" value="감각통합치료">
-                            <label for="therapy4">감각통합치료</label>
+                            <input type="checkbox" id="therapy4" name="therapyType" value="감각통합 홈티">
+                            <label for="therapy4">감각통합 홈티</label>
                         </div>
                         <div class="checkbox-item">
-                            <input type="checkbox" id="therapy5" name="therapyType" value="미술치료">
-                            <label for="therapy5">미술치료</label>
+                            <input type="checkbox" id="therapy5" name="therapyType" value="미술 홈티">
+                            <label for="therapy5">미술 홈티</label>
                         </div>
                         <div class="checkbox-item">
                             <input type="checkbox" id="therapy6" name="therapyType" value="사회성 그룹">
@@ -476,17 +489,17 @@
                 
                 <div class="form-group">
                     <label class="form-label" for="introduction">
-                        자기소개 및 치료 철학 <span class="required">*</span>
+                        자기소개 및 교육 철학 <span class="required">*</span>
                     </label>
                     <textarea 
                         id="introduction" 
                         name="introduction" 
                         class="form-textarea" 
                         style="min-height: 180px;"
-                        placeholder="예: 10년간 발달장애 아동을 치료해왔으며, 아동 개개인의 강점을 찾아 발달을 돕는 것을 중요하게 생각합니다..."
+                        placeholder="예: 10년간 발달장애 아동을 지도해왔으며, 아동 개개인의 강점을 찾아 발달을 돕는 것을 중요하게 생각합니다..."
                         required
                     ></textarea>
-                    <p class="form-help">부모님께 보여질 프로필에 사용됩니다. 치료 경험, 철학, 강점 등을 자유롭게 작성해주세요.</p>
+                    <p class="form-help">부모님께 보여질 프로필에 사용됩니다. 경험, 교육 철학, 강점 등을 자유롭게 작성해주세요.</p>
                 </div>
 
                 <div class="form-group">
@@ -516,7 +529,7 @@
                 <div class="terms-item">
                     <input type="checkbox" id="terms2" name="terms2" required>
                     <label for="terms2">
-                        [필수] 치료사 이용약관 동의
+                        [필수] 홈티 선생님 이용약관 동의
                         <a href="#" class="terms-link">(보기)</a>
                     </label>
                 </div>
@@ -537,18 +550,20 @@
             <!-- 제출 버튼 -->
             <div class="form-submit">
                 <button type="submit" class="submit-button">
-                    지원서 제출하기
+                    서비스 오픈 알림 받기
                 </button>
             </div>
         </form>
 
         <!-- 성공 메시지 -->
         <div id="successMessage" class="success-message">
-            <div class="success-icon">✅</div>
-            <h2 class="success-title">지원이 완료되었습니다!</h2>
+            <div class="success-icon">🎉</div>
+            <h2 class="success-title">사전 신청이 완료되었습니다!</h2>
             <p class="success-description">
-                자격증 및 경력 검증 후 3-5일 내 연락드릴 예정입니다.<br>
-                검증 완료 시 인터뷰 일정을 안내드립니다.
+                3월 22일 베타테스트 오픈 시<br>
+                가장 먼저 연락드리겠습니다.<br><br>
+                <strong style="color: #4ECDC4; font-size: 18px;">첫 3개월 수수료 100% 무료 혜택이 적용됩니다!</strong><br>
+                <span style="font-size: 16px; color: #666;">(최대 28만원 세이브)</span>
             </p>
             <a href="./index.html" class="btn btn-therapist-primary">
                 홈으로 돌아가기
@@ -608,7 +623,7 @@
                 
                 // 타임스탬프 추가
                 data.timestamp = new Date().toLocaleString('ko-KR');
-                data.formType = '치료사';
+                data.formType = '홈티선생님';
                 
                 // Google Sheets로 전송
                 await submitToGoogleSheets(data, 'therapist');

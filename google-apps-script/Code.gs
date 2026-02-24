@@ -27,7 +27,7 @@ function doPost(e) {
     // 폼 타입에 따라 해당 시트에 저장
     if (formType === 'parent' || formType === '부모') {
       saveToSheet('부모신청', data, getParentHeaders());
-    } else if (formType === 'therapist' || formType === '치료사') {
+    } else if (formType === 'therapist' || formType === '치료사' || formType === '홈티선생님') {
       saveToSheet('치료사신청', data, getTherapistHeaders());
     } else {
       throw new Error('알 수 없는 폼 타입: ' + formType);

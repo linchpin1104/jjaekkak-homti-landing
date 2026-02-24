@@ -7,9 +7,22 @@
     <link rel="stylesheet" href="../assets/css/common.css">
     <link rel="stylesheet" href="../assets/css/parent.css">
     <link rel="stylesheet" href="../assets/css/form.css">
+    <link rel="stylesheet" href="../assets/css/banner.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
 </head>
 <body class="parent-page">
+    <!-- 사전신청 배너 -->
+    <div class="promo-banner">
+        <div class="promo-banner-content">
+            <span class="promo-emoji">🎉</span>
+            <span class="promo-text">
+                <span class="promo-highlight">베타테스트 오픈 3월 22일</span>
+                사전등록 시 첫 달 수업료
+                <span class="promo-highlight">35만원 수수료 100% 무료</span>
+            </span>
+        </div>
+    </div>
+
     <!-- 헤더 -->
     <header class="header">
         <div class="logo">째깍홈티 X 째깍악어</div>
@@ -19,10 +32,10 @@
     <div class="form-container">
         <!-- 폼 헤더 -->
         <div class="form-header">
-            <h1 class="form-title">무료 상담 신청</h1>
+            <h1 class="form-title">서비스 오픈 알림 신청</h1>
             <p class="form-subtitle">
-                아이의 상황을 알려주시면<br>
-                24시간 내 운영팀이 연락드려 상담을 진행합니다.
+                정보를 남겨주시면 서비스 오픈 시<br>
+                가장 먼저 연락드리겠습니다.
             </p>
         </div>
 
@@ -61,26 +74,6 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="form-label" for="contactMethod">
-                        선호하는 연락 방법 <span class="required">*</span>
-                    </label>
-                    <div class="radio-group">
-                        <div class="radio-item">
-                            <input type="radio" id="contactPhone" name="contactMethod" value="전화" checked>
-                            <label for="contactPhone">전화</label>
-                        </div>
-                        <div class="radio-item">
-                            <input type="radio" id="contactKakao" name="contactMethod" value="카카오톡">
-                            <label for="contactKakao">카카오톡</label>
-                        </div>
-                        <div class="radio-item">
-                            <input type="radio" id="contactBoth" name="contactMethod" value="상관없음">
-                            <label for="contactBoth">상관없음</label>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-group">
                     <label class="form-label" for="kakaoId">
                         카카오톡 ID
                     </label>
@@ -91,7 +84,7 @@
                         class="form-input" 
                         placeholder="카카오톡 ID (선택)"
                     >
-                    <p class="form-help">카카오톡으로 상담 원하시면 입력해주세요</p>
+                    <p class="form-help">입력하시면 카카오톡으로도 연락드립니다</p>
                 </div>
             </div>
 
@@ -99,6 +92,21 @@
             <div class="form-section">
                 <h2 class="section-title">아이 정보</h2>
                 
+                <div class="form-group">
+                    <label class="form-label" for="childName">
+                        아이 이름 <span class="required">*</span>
+                    </label>
+                    <input 
+                        type="text" 
+                        id="childName" 
+                        name="childName" 
+                        class="form-input" 
+                        placeholder="김OO" 
+                        required
+                    >
+                    <p class="form-help">성과 이름 중 한 글자는 O로 표기해도 괜찮습니다</p>
+                </div>
+
                 <div class="form-group">
                     <label class="form-label" for="childAge">
                         아이 나이 <span class="required">*</span>
@@ -119,35 +127,34 @@
 
                 <div class="form-group">
                     <label class="form-label" for="diagnosis">
-                        진단명 또는 의심 증상 <span class="required">*</span>
+                        진단명 또는 의심 증상
                     </label>
                     <input 
                         type="text" 
                         id="diagnosis" 
                         name="diagnosis" 
                         class="form-input" 
-                        placeholder="예: 자폐스펙트럼, 언어발달지연, ADHD 등" 
-                        required
+                        placeholder="예: 자폐스펙트럼, 언어발달지연, ADHD 등"
                     >
-                    <p class="form-help">정확한 진단명이 없어도 괜찮습니다</p>
+                    <p class="form-help">정확한 진단명이 없어도 괜찮습니다. 작성하시면 더 정확한 매칭에 도움이 됩니다.</p>
                 </div>
 
                 <div class="form-group">
                     <label class="form-label" for="currentIssue">
-                        현재 어떤 부분이 가장 걱정되시나요? <span class="required">*</span>
+                        현재 어떤 부분이 가장 걱정되시나요?
                     </label>
                     <textarea 
                         id="currentIssue" 
                         name="currentIssue" 
                         class="form-textarea" 
                         placeholder="예: 또래에 비해 말이 늦고, 눈 맞춤이 어려워요"
-                        required
                     ></textarea>
+                    <p class="form-help">작성하시면 우리 아이에게 더 적합한 선생님을 매칭해드릴 수 있습니다.</p>
                 </div>
 
                 <div class="form-group">
                     <label class="form-label">
-                        현재 받고 있는 치료가 있나요?
+                        현재 받고 있는 수업이나 센터가 있나요?
                     </label>
                     <div class="radio-group">
                         <div class="radio-item">
@@ -163,71 +170,72 @@
 
                 <div class="form-group" id="treatmentDetailGroup">
                     <label class="form-label" for="treatmentDetail">
-                        받고 있는 치료 종류
+                        받고 있는 수업 종류
                     </label>
                     <input 
                         type="text" 
                         id="treatmentDetail" 
                         name="treatmentDetail" 
                         class="form-input" 
-                        placeholder="예: 언어치료 주 2회, 감각통합 주 1회"
+                        placeholder="예: 언어 수업 주 2회, 감각통합 주 1회"
                     >
                 </div>
             </div>
 
-            <!-- 섹션 3: 희망 치료 정보 -->
+            <!-- 섹션 3: 희망 홈티 정보 -->
             <div class="form-section">
-                <h2 class="section-title">희망 치료 정보</h2>
+                <h2 class="section-title">희망 홈티 정보</h2>
                 
                 <div class="form-group">
                     <label class="form-label">
-                        어떤 치료를 원하시나요? <span class="required">*</span>
+                        어떤 홈티 수업을 원하시나요?
                     </label>
                     <div class="checkbox-group">
                         <div class="checkbox-item">
-                            <input type="checkbox" id="therapy1" name="therapyType" value="언어치료">
-                            <label for="therapy1">언어치료</label>
+                            <input type="checkbox" id="therapy1" name="therapyType" value="언어 홈티">
+                            <label for="therapy1">언어 홈티</label>
                         </div>
                         <div class="checkbox-item">
-                            <input type="checkbox" id="therapy2" name="therapyType" value="놀이치료">
-                            <label for="therapy2">놀이치료</label>
+                            <input type="checkbox" id="therapy2" name="therapyType" value="놀이 홈티">
+                            <label for="therapy2">놀이 홈티</label>
                         </div>
                         <div class="checkbox-item">
-                            <input type="checkbox" id="therapy3" name="therapyType" value="인지치료">
-                            <label for="therapy3">인지치료</label>
+                            <input type="checkbox" id="therapy3" name="therapyType" value="인지 홈티">
+                            <label for="therapy3">인지 홈티</label>
                         </div>
                         <div class="checkbox-item">
-                            <input type="checkbox" id="therapy4" name="therapyType" value="감각통합치료">
-                            <label for="therapy4">감각통합치료</label>
+                            <input type="checkbox" id="therapy4" name="therapyType" value="감각통합 홈티">
+                            <label for="therapy4">감각통합 홈티</label>
                         </div>
                         <div class="checkbox-item">
-                            <input type="checkbox" id="therapy5" name="therapyType" value="미술치료">
-                            <label for="therapy5">미술치료</label>
+                            <input type="checkbox" id="therapy5" name="therapyType" value="미술 홈티">
+                            <label for="therapy5">미술 홈티</label>
                         </div>
                         <div class="checkbox-item">
-                            <input type="checkbox" id="therapy6" name="therapyType" value="기타">
-                            <label for="therapy6">기타 (잘 모르겠어요, 상담 시 결정)</label>
+                            <input type="checkbox" id="therapy6" name="therapyType" value="잘 모르겠어요">
+                            <label for="therapy6">잘 모르겠어요 (추천받고 싶어요)</label>
                         </div>
                     </div>
+                    <p class="form-help">작성하시면 더 정확한 매칭이 가능합니다. 비워두셔도 괜찮습니다.</p>
                 </div>
 
                 <div class="form-group">
                     <label class="form-label" for="frequency">
-                        희망 수업 빈도 <span class="required">*</span>
+                        희망 수업 빈도
                     </label>
-                    <select id="frequency" name="frequency" class="form-select" required>
+                    <select id="frequency" name="frequency" class="form-select">
                         <option value="">선택해주세요</option>
                         <option value="주 1회">주 1회</option>
                         <option value="주 2회">주 2회</option>
                         <option value="주 3회">주 3회</option>
                         <option value="주 4회 이상">주 4회 이상</option>
-                        <option value="상담 후 결정">상담 후 결정</option>
+                        <option value="아직 모르겠어요">아직 모르겠어요</option>
                     </select>
                 </div>
 
                 <div class="form-group">
                     <label class="form-label">
-                        가능한 요일 <span class="required">*</span>
+                        가능한 요일
                     </label>
                     <div class="time-selection">
                         <div class="time-chip" onclick="toggleChip(this)">
@@ -259,11 +267,12 @@
                             <label for="day7">일</label>
                         </div>
                     </div>
+                    <p class="form-help">여러 개 선택 가능합니다</p>
                 </div>
 
                 <div class="form-group">
                     <label class="form-label">
-                        가능한 시간대 <span class="required">*</span>
+                        가능한 시간대
                     </label>
                     <div class="checkbox-group">
                         <div class="checkbox-item">
@@ -283,13 +292,14 @@
                             <label for="time4">저녁 (6-9시)</label>
                         </div>
                     </div>
+                    <p class="form-help">여러 개 선택 가능합니다</p>
                 </div>
 
                 <div class="form-group">
                     <label class="form-label" for="startDate">
-                        언제부터 시작하고 싶으신가요? <span class="required">*</span>
+                        언제부터 시작하고 싶으신가요?
                     </label>
-                    <select id="startDate" name="startDate" class="form-select" required>
+                    <select id="startDate" name="startDate" class="form-select">
                         <option value="">선택해주세요</option>
                         <option value="최대한 빨리">최대한 빨리</option>
                         <option value="1-2주 내">1-2주 내</option>
@@ -320,7 +330,7 @@
                 
                 <div class="form-group">
                     <label class="form-label" for="additionalInfo">
-                        치료사에게 미리 알려주고 싶은 내용이 있나요?
+                        선생님에게 미리 알려주고 싶은 내용이 있나요?
                     </label>
                     <textarea 
                         id="additionalInfo" 
@@ -328,7 +338,7 @@
                         class="form-textarea" 
                         placeholder="예: 낯을 많이 가려요, 특정 소리에 예민해요 등"
                     ></textarea>
-                    <p class="form-help">선택사항이지만, 작성하시면 더 적합한 매칭에 도움이 됩니다</p>
+                    <p class="form-help">작성하시면 우리 아이에게 더 잘 맞는 선생님을 추천해드릴 수 있습니다</p>
                 </div>
 
                 <div class="form-group">
@@ -373,18 +383,19 @@
             <!-- 제출 버튼 -->
             <div class="form-submit">
                 <button type="submit" class="submit-button">
-                    무료 상담 신청하기
+                    서비스 오픈 알림 받기
                 </button>
             </div>
         </form>
 
         <!-- 성공 메시지 -->
         <div id="successMessage" class="success-message">
-            <div class="success-icon">✅</div>
-            <h2 class="success-title">신청이 완료되었습니다!</h2>
+            <div class="success-icon">🎉</div>
+            <h2 class="success-title">사전 신청이 완료되었습니다!</h2>
             <p class="success-description">
-                24시간 내 운영팀이 연락드릴 예정입니다.<br>
-                등록하신 연락처로 연락드리니 조금만 기다려주세요.
+                3월 22일 베타테스트 오픈 시<br>
+                가장 먼저 연락드리겠습니다.<br><br>
+                <strong style="color: #FFB800; font-size: 18px;">첫 달 수업료 35만원 수수료 100% 무료 혜택이 적용됩니다!</strong>
             </p>
             <a href="./index.html" class="btn btn-parent-primary">
                 홈으로 돌아가기
