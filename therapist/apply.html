@@ -39,6 +39,9 @@
                 선생님의 정보를 남겨주시면<br>
                 서비스 오픈 시 가장 먼저 연락드리겠습니다.
             </p>
+            <div class="form-hook-message">
+                💡 자세하게 남겨주실수록 매칭 확률이 올라갑니다
+            </div>
         </div>
 
         <!-- 신청 폼 -->
@@ -91,7 +94,7 @@
 
                 <div class="form-group">
                     <label class="form-label" for="birthYear">
-                        출생년도 <span class="required">*</span>
+                        출생년도
                     </label>
                     <input 
                         type="number" 
@@ -101,7 +104,6 @@
                         placeholder="1990" 
                         min="1950"
                         max="2005"
-                        required
                     >
                 </div>
 
@@ -209,15 +211,14 @@
 
                 <div class="form-group">
                     <label class="form-label" for="major">
-                        전공 <span class="required">*</span>
+                        전공
                     </label>
                     <input 
                         type="text" 
                         id="major" 
                         name="major" 
                         class="form-input" 
-                        placeholder="예: 언어병리학, 심리학, 특수교육 등" 
-                        required
+                        placeholder="예: 언어병리학, 심리학, 특수교육 등"
                     >
                 </div>
 
@@ -238,14 +239,13 @@
 
                 <div class="form-group">
                     <label class="form-label" for="careerDetail">
-                        경력 상세 <span class="required">*</span>
+                        경력 상세
                     </label>
                     <textarea 
                         id="careerDetail" 
                         name="careerDetail" 
                         class="form-textarea" 
                         placeholder="예: OO발달센터 언어 선생님 (2020-2023), 프리랜서 홈티 (2023-현재)"
-                        required
                     ></textarea>
                     <p class="form-help">근무했던 센터, 기간, 담당 업무 등을 구체적으로 작성해주세요</p>
                 </div>
@@ -305,7 +305,7 @@
 
                 <div class="form-group">
                     <label class="form-label">
-                        경험 있는 진단명/장애 유형 <span class="required">*</span>
+                        경험 있는 진단명/장애 유형
                     </label>
                     <div class="checkbox-group">
                         <div class="checkbox-item">
@@ -341,7 +341,7 @@
 
                 <div class="form-group">
                     <label class="form-label">
-                        선호하는 아동 연령대 <span class="required">*</span>
+                        선호하는 아동 연령대
                     </label>
                     <div class="checkbox-group">
                         <div class="checkbox-item">
@@ -382,7 +382,7 @@
                 
                 <div class="form-group">
                     <label class="form-label">
-                        활동 가능 요일 <span class="required">*</span>
+                        활동 가능 요일
                     </label>
                     <div class="time-selection">
                         <div class="time-chip" onclick="toggleChip(this)">
@@ -418,7 +418,7 @@
 
                 <div class="form-group">
                     <label class="form-label">
-                        활동 가능 시간대 <span class="required">*</span>
+                        활동 가능 시간대
                     </label>
                     <div class="checkbox-group">
                         <div class="checkbox-item">
@@ -442,9 +442,9 @@
 
                 <div class="form-group">
                     <label class="form-label" for="weeklyCapacity">
-                        주당 희망 케이스 수 <span class="required">*</span>
+                        주당 희망 케이스 수
                     </label>
-                    <select id="weeklyCapacity" name="weeklyCapacity" class="form-select" required>
+                    <select id="weeklyCapacity" name="weeklyCapacity" class="form-select">
                         <option value="">선택해주세요</option>
                         <option value="주 5회 미만">주 5회 미만</option>
                         <option value="주 5-10회">주 5-10회</option>
@@ -457,9 +457,9 @@
 
                 <div class="form-group">
                     <label class="form-label" for="startDate">
-                        언제부터 활동 가능하신가요? <span class="required">*</span>
+                        언제부터 활동 가능하신가요?
                     </label>
-                    <select id="startDate" name="startDate" class="form-select" required>
+                    <select id="startDate" name="startDate" class="form-select">
                         <option value="">선택해주세요</option>
                         <option value="즉시 가능">즉시 가능</option>
                         <option value="1-2주 후">1-2주 후</option>
@@ -491,7 +491,7 @@
                 
                 <div class="form-group">
                     <label class="form-label" for="introduction">
-                        자기소개 및 교육 철학 <span class="required">*</span>
+                        자기소개 및 교육 철학
                     </label>
                     <textarea 
                         id="introduction" 
@@ -499,7 +499,6 @@
                         class="form-textarea" 
                         style="min-height: 180px;"
                         placeholder="예: 10년간 발달장애 아동을 지도해왔으며, 아동 개개인의 강점을 찾아 발달을 돕는 것을 중요하게 생각합니다..."
-                        required
                     ></textarea>
                     <p class="form-help">부모님께 보여질 프로필에 사용됩니다. 경험, 교육 철학, 강점 등을 자유롭게 작성해주세요.</p>
                 </div>
