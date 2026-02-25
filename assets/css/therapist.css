@@ -125,6 +125,126 @@ body.therapist-page {
         grid-template-columns: 1fr;
         max-width: 500px;
     }
+    
+    .calculator-section h2 {
+        font-size: 28px !important;
+    }
+    
+    .calculator-section p {
+        font-size: 16px !important;
+    }
+    
+    .calculator-section table {
+        font-size: 13px;
+    }
+    
+    .calculator-section table th,
+    .calculator-section table td {
+        padding: 12px 8px !important;
+        font-size: 13px !important;
+    }
+    
+    .calculator-section table strong {
+        font-size: 16px !important;
+    }
+    
+    .benefit-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .benefit-card {
+        padding: 25px 18px !important;
+    }
+    
+    .benefit-card h3 {
+        font-size: 16px !important;
+    }
+    
+    .benefit-card p {
+        font-size: 13px !important;
+        line-height: 1.6 !important;
+    }
+    
+    .income-example {
+        font-size: 14px;
+    }
+    
+    /* 테이블 스크롤 래퍼 */
+    .calculator-section > div > div[style*="overflow-x"] {
+        margin: 0 -20px;
+        padding: 0 20px;
+    }
+    
+    /* 수입 예시 카드 */
+    .calculator-section > div > div[style*="display: grid"] {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+    
+    .calculator-section > div > div[style*="display: grid"] > div {
+        padding: 25px 20px !important;
+    }
+    
+    /* 비교 박스 */
+    .calculator-section div[style*="background: linear-gradient(135deg, #FFF9E6"] {
+        padding: 20px 15px !important;
+        margin: 30px 0 !important;
+    }
+    
+    .calculator-section div[style*="background: linear-gradient(135deg, #FFF9E6"] h4 {
+        font-size: 18px !important;
+    }
+    
+    .calculator-section div[style*="background: linear-gradient(135deg, #FFF9E6"] div[style*="display: grid"] {
+        grid-template-columns: 1fr !important;
+        gap: 15px !important;
+    }
+    
+    /* 요구사항 섹션 */
+    section[style*="background: linear-gradient(135deg, #F8F9FA"] {
+        padding: 50px 20px !important;
+    }
+    
+    section[style*="background: linear-gradient(135deg, #F8F9FA"] h2 {
+        font-size: 28px !important;
+    }
+    
+    section[style*="background: linear-gradient(135deg, #F8F9FA"] h3 {
+        font-size: 18px !important;
+    }
+    
+    section[style*="background: linear-gradient(135deg, #F8F9FA"] > div > div {
+        grid-template-columns: 1fr !important;
+    }
+    
+    /* FAQ 섹션 */
+    .faq-item {
+        padding: 0 15px 15px !important;
+        margin: 15px 0 !important;
+    }
+    
+    .faq-question {
+        font-size: 16px !important;
+    }
+    
+    .faq-answer {
+        font-size: 14px !important;
+    }
+    
+    /* 일정 안내 */
+    .schedule-info {
+        font-size: 14px !important;
+    }
+    
+    .schedule-info div[style*="font-size: 20px"] {
+        font-size: 18px !important;
+    }
+    
+    .schedule-info div[style*="font-size: 18px"] {
+        font-size: 16px !important;
+    }
 }
 
 .problem-card h3 {

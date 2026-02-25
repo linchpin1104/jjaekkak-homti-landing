@@ -126,6 +126,83 @@ body.parent-page {
         grid-template-columns: 1fr;
         max-width: 500px;
     }
+    
+    .profile-sample-btn {
+        display: block !important;
+        margin: 10px auto 0 !important;
+        max-width: 200px;
+        text-align: center;
+        font-size: 13px !important;
+        padding: 8px 14px !important;
+    }
+    
+    .info-list li {
+        text-align: center;
+    }
+    
+    /* 숨겨진 비용 섹션 모바일 최적화 */
+    .benefit-section > div > div {
+        padding: 25px 20px !important;
+    }
+    
+    .benefit-section h3 {
+        font-size: 20px !important;
+    }
+    
+    .benefit-section div[style*="display: flex"] span {
+        font-size: 14px !important;
+    }
+    
+    .benefit-section div[style*="font-size: 18px"] {
+        font-size: 16px !important;
+    }
+    
+    /* 혜택 카드 */
+    .benefit-grid {
+        grid-template-columns: 1fr !important;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .benefit-card {
+        padding: 25px 18px !important;
+    }
+    
+    .benefit-card h3 {
+        font-size: 16px !important;
+    }
+    
+    .benefit-card p {
+        font-size: 13px !important;
+        line-height: 1.6 !important;
+    }
+    
+    /* FAQ 섹션 */
+    .faq-item {
+        padding: 0 15px 15px !important;
+        margin: 15px 0 !important;
+    }
+    
+    .faq-question {
+        font-size: 16px !important;
+    }
+    
+    .faq-answer {
+        font-size: 14px !important;
+    }
+    
+    /* 일정 안내 */
+    .schedule-info {
+        font-size: 14px !important;
+    }
+    
+    .schedule-info div[style*="font-size: 20px"] {
+        font-size: 18px !important;
+    }
+    
+    .schedule-info div[style*="font-size: 18px"] {
+        font-size: 16px !important;
+    }
 }
 
 .problem-card h3 {
