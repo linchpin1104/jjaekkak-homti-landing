@@ -67,14 +67,27 @@ body.therapist-page {
     text-align: center;
 }
 
+.problem-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 .problem-card {
     background: #F8F9FA;
     border-radius: 16px;
     padding: 30px;
-    margin: 20px auto;
-    max-width: 500px;
     text-align: left;
     border-left: 4px solid #4ECDC4;
+}
+
+@media (max-width: 768px) {
+    .problem-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
 }
 
 .problem-card h3 {
@@ -199,7 +212,20 @@ body.therapist-page {
 .calculator-section {
     background: linear-gradient(135deg, #4ECDC4 0%, #44B8B0 100%);
     padding: 60px 20px;
+}
+
+.calculator-section h2,
+.calculator-section p {
     color: white;
+}
+
+.calculator-section table {
+    color: #333;
+}
+
+.calculator-section table th,
+.calculator-section table td {
+    color: #333 !important;
 }
 
 .calculator-title {
