@@ -34,6 +34,44 @@ body.parent-page {
     z-index: 0;
 }
 
+.hero-content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.hero-text {
+    text-align: left;
+}
+
+.hero-text .hero-title,
+.hero-text .hero-subtitle {
+    text-align: left;
+}
+
+.hero-image {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .hero-content-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .hero-text {
+        text-align: center;
+    }
+    
+    .hero-text .hero-title,
+    .hero-text .hero-subtitle {
+        text-align: center;
+    }
+}
+
 .hero-title.parent-title {
     color: #333;
 }
