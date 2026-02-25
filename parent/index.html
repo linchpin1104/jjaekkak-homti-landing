@@ -305,17 +305,19 @@
         
         <div style="max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
             <!-- 교사 프로필 -->
-            <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: 0 8px 30px rgba(0,0,0,0.1); text-align: center;">
-                <h3 style="font-size: 24px; font-weight: 700; color: #FFB800; margin-bottom: 30px;">
+            <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: 0 8px 30px rgba(0,0,0,0.1);">
+                <h3 style="font-size: 24px; font-weight: 700; color: #FFB800; margin-bottom: 30px; text-align: center;">
                     📋 검증된 선생님 프로필
                 </h3>
-                <div style="background: #f8f9fa; padding: 25px; border-radius: 12px; margin-bottom: 25px; cursor: pointer;" onclick="openImageModal('../assets/images/teacher-profile-example.png', '선생님 프로필 예시')">
+                <div class="image-scroll-container" style="background: #f8f9fa; padding: 20px; border-radius: 12px; margin-bottom: 20px; max-height: 500px; overflow-y: auto; border: 2px solid #e0e0e0;">
                     <img src="../assets/images/teacher-profile-example.png" 
                          alt="선생님 프로필 예시" 
-                         style="width: 100%; max-height: 350px; object-fit: contain; border-radius: 8px;">
-                    <p style="font-size: 13px; color: #999; margin-top: 12px;">📱 클릭하면 크게 볼 수 있습니다</p>
+                         style="width: 100%; display: block; border-radius: 8px;">
                 </div>
-                <div style="text-align: left;">
+                <div style="text-align: center; margin-bottom: 20px;">
+                    <p style="font-size: 13px; color: #999;">↕️ 스크롤해서 전체 내용을 확인하세요</p>
+                </div>
+                <div style="text-align: left; background: #f8f9fa; padding: 20px; border-radius: 12px;">
                     <p style="font-size: 15px; color: #666; line-height: 2; margin: 0;">
                         ✅ 자격증 및 학력 확인<br>
                         ✅ 경력 및 전문 분야<br>
@@ -326,17 +328,19 @@
             </div>
             
             <!-- 수업 노트 -->
-            <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: 0 8px 30px rgba(0,0,0,0.1); text-align: center;">
-                <h3 style="font-size: 24px; font-weight: 700; color: #FFB800; margin-bottom: 30px;">
+            <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: 0 8px 30px rgba(0,0,0,0.1);">
+                <h3 style="font-size: 24px; font-weight: 700; color: #FFB800; margin-bottom: 30px; text-align: center;">
                     📝 매 수업 후 상세 노트
                 </h3>
-                <div style="background: #f8f9fa; padding: 25px; border-radius: 12px; margin-bottom: 25px; cursor: pointer;" onclick="openImageModal('../assets/images/class-note-example.png', '수업 노트 예시')">
+                <div class="image-scroll-container" style="background: #f8f9fa; padding: 20px; border-radius: 12px; margin-bottom: 20px; max-height: 500px; overflow-y: auto; border: 2px solid #e0e0e0;">
                     <img src="../assets/images/class-note-example.png" 
                          alt="수업 노트 예시" 
-                         style="width: 100%; max-height: 350px; object-fit: contain; border-radius: 8px;">
-                    <p style="font-size: 13px; color: #999; margin-top: 12px;">📱 클릭하면 크게 볼 수 있습니다</p>
+                         style="width: 100%; display: block; border-radius: 8px;">
                 </div>
-                <div style="text-align: left;">
+                <div style="text-align: center; margin-bottom: 20px;">
+                    <p style="font-size: 13px; color: #999;">↕️ 스크롤해서 전체 내용을 확인하세요</p>
+                </div>
+                <div style="text-align: left; background: #f8f9fa; padding: 20px; border-radius: 12px;">
                     <p style="font-size: 15px; color: #666; line-height: 2; margin: 0;">
                         ✅ 오늘 진행한 활동 내용<br>
                         ✅ 아이의 반응 및 발달 상황<br>
@@ -374,39 +378,6 @@
             서비스 오픈 알림 받기
         </a>
     </section>
-
-    <!-- 이미지 확대 모달 -->
-    <div id="imageModal" class="image-modal" onclick="closeImageModal()">
-        <span class="image-modal-close">&times;</span>
-        <img class="image-modal-content" id="modalImage" alt="">
-        <div id="imageCaption" class="image-modal-caption"></div>
-    </div>
-
-    <script>
-        function openImageModal(src, caption) {
-            const modal = document.getElementById('imageModal');
-            const modalImg = document.getElementById('modalImage');
-            const captionText = document.getElementById('imageCaption');
-            
-            modal.style.display = 'flex';
-            modalImg.src = src;
-            captionText.textContent = caption;
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeImageModal() {
-            const modal = document.getElementById('imageModal');
-            modal.style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }
-
-        // ESC 키로 모달 닫기
-        document.addEventListener('keydown', function(event) {
-            if (event.key === 'Escape') {
-                closeImageModal();
-            }
-        });
-    </script>
 
     <!-- 푸터 -->
     <footer class="footer">
