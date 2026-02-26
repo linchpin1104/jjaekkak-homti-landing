@@ -530,3 +530,32 @@ body.therapist-page {
     color: #666;
     line-height: 1.6;
 }
+
+/* 수수료 비교 - 데스크톱/모바일 전환 */
+@media (min-width: 769px) {
+    .mobile-comparison {
+        display: none !important;
+    }
+    
+    .desktop-comparison {
+        display: block !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .desktop-comparison {
+        display: none !important;
+    }
+    
+    .mobile-comparison {
+        display: block !important;
+    }
+    
+    .calculator-section h2 {
+        font-size: 26px !important;
+    }
+    
+    .calculator-section > p {
+        font-size: 16px !important;
+    }
+}

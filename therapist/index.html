@@ -226,14 +226,14 @@
         <p style="margin-bottom: 50px; font-size: 20px; color: white; font-weight: 600; text-align: center;">한 가정 당 80만원 일했을 때 수수료 비교</p>
         
         <div style="max-width: 1100px; margin: 0 auto;">
-            <!-- 비교표 -->
-            <div style="overflow-x: auto;">
+            <!-- 데스크톱 비교표 -->
+            <div class="desktop-comparison" style="overflow-x: auto;">
                 <table style="width: 100%; border-collapse: collapse; background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
                     <thead>
                         <tr style="background: #f8f9fa;">
                             <th style="padding: 20px; color: #333; font-size: 18px; text-align: left; font-weight: 700;">구분</th>
-                            <th style="padding: 20px; color: #333; font-size: 18px; text-align: center; font-weight: 700;">아이홈티</th>
-                            <th style="padding: 20px; color: #333; font-size: 18px; text-align: center; font-weight: 700;">가치톡</th>
+                            <th style="padding: 20px; color: #333; font-size: 18px; text-align: center; font-weight: 700;">A사</th>
+                            <th style="padding: 20px; color: #333; font-size: 18px; text-align: center; font-weight: 700;">B사</th>
                             <th style="padding: 20px; background: #FFB800; color: #000 !important; font-size: 18px; text-align: center; position: relative; font-weight: 700;">
                                 째깍홈티 (사전등록)
                                 <div style="position: absolute; top: 5px; right: 10px; background: #FF6B6B; padding: 4px 12px; border-radius: 12px; font-size: 12px; color: white;">BEST</div>
@@ -242,20 +242,20 @@
                     </thead>
                     <tbody>
                         <tr style="border-bottom: 1px solid #f0f0f0;">
-                            <td style="padding: 20px; font-weight: 600; color: #333;">월 수업료 (주 2회)</td>
-                            <td style="padding: 20px; text-align: center; color: #333;">100,000원 × 8회<br>= 800,000원</td>
-                            <td style="padding: 20px; text-align: center; color: #333;">100,000원 × 8회<br>= 800,000원</td>
-                            <td style="padding: 20px; text-align: center; background: #FFF9E6; color: #333;">100,000원 × 8회<br>= 800,000원</td>
+                            <td style="padding: 20px; font-weight: 600; color: #333;">월 수업료</td>
+                            <td style="padding: 20px; text-align: center; color: #333;">주 2회 × 2가정<br>= 800,000원</td>
+                            <td style="padding: 20px; text-align: center; color: #333;">주 1회 × 2가정 방문</td>
+                            <td style="padding: 20px; text-align: center; background: #FFF9E6; color: #333;">주 2회 × 2가정<br>= 800,000원</td>
                         </tr>
                         <tr style="border-bottom: 1px solid #f0f0f0;">
                             <td style="padding: 20px; font-weight: 600; color: #333;">플랫폼 수수료</td>
                             <td style="padding: 20px; text-align: center; color: #FF6B6B;">
-                                <strong style="font-size: 20px;">160,000원</strong><br>
-                                <span style="font-size: 14px; color: #666;">(20%)</span>
+                                <strong style="font-size: 20px;">800,000원</strong><br>
+                                <span style="font-size: 14px; color: #666;">(100% 전액)</span>
                             </td>
                             <td style="padding: 20px; text-align: center; color: #FF6B6B;">
-                                <strong style="font-size: 20px;">200,000원</strong><br>
-                                <span style="font-size: 14px; color: #666;">(25%)</span>
+                                <strong style="font-size: 20px;">600,000원</strong><br>
+                                <span style="font-size: 14px; color: #666;">(75%)</span>
                             </td>
                             <td style="padding: 20px; text-align: center; background: #FFF9E6; color: #4CAF50; font-weight: 700;">
                                 <strong style="font-size: 20px;">0원 ✨</strong><br>
@@ -264,11 +264,11 @@
                         </tr>
                         <tr style="background: #f8f9fa;">
                             <td style="padding: 25px; font-weight: 700; font-size: 18px; color: #333;">선생님 실수령액</td>
-                            <td style="padding: 25px; text-align: center; font-size: 20px; font-weight: 700; color: #333;">
-                                640,000원
-                            </td>
                             <td style="padding: 25px; text-align: center; font-size: 20px; font-weight: 700; color: #FF6B6B;">
-                                600,000원
+                                0원
+                            </td>
+                            <td style="padding: 25px; text-align: center; font-size: 20px; font-weight: 700; color: #333;">
+                                200,000원
                             </td>
                             <td style="padding: 25px; text-align: center; font-size: 24px; font-weight: 800; color: #FFB800; background: #FFF9E6;">
                                 800,000원 🎉
@@ -277,19 +277,83 @@
                         <tr>
                             <td style="padding: 25px; font-weight: 700; font-size: 18px; background: white; color: #333;">째깍홈티 대비 차이</td>
                             <td style="padding: 25px; text-align: center; background: #FFF3F3;">
-                                <strong style="font-size: 20px; color: #FF6B6B;">-160,000원</strong><br>
+                                <strong style="font-size: 20px; color: #FF6B6B;">-800,000원</strong><br>
                                 <span style="font-size: 14px; color: #666;">손해</span>
                             </td>
                             <td style="padding: 25px; text-align: center; background: #FFF3F3;">
-                                <strong style="font-size: 20px; color: #FF6B6B;">-200,000원</strong><br>
+                                <strong style="font-size: 20px; color: #FF6B6B;">-600,000원</strong><br>
                                 <span style="font-size: 14px; color: #666;">손해</span>
                             </td>
                             <td style="padding: 25px; text-align: center; background: linear-gradient(135deg, #FFD93D 0%, #FFC837 100%);">
-                                <strong style="font-size: 22px; color: #000 !important;">최대 20만원 세이브 💰</strong>
+                                <strong style="font-size: 22px; color: #000 !important;">최대 80만원 세이브 💰</strong>
                             </td>
                         </tr>
                     </tbody>
                 </table>
+            </div>
+
+            <!-- 모바일 비교 카드 -->
+            <div class="mobile-comparison" style="display: none;">
+                <!-- A사 -->
+                <div style="background: white; border-radius: 16px; padding: 25px; margin-bottom: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                    <h3 style="font-size: 20px; font-weight: 700; color: #333; margin-bottom: 20px; text-align: center;">A사</h3>
+                    <div style="border-bottom: 2px solid #f0f0f0; padding-bottom: 15px; margin-bottom: 15px;">
+                        <div style="font-weight: 600; color: #666; margin-bottom: 8px;">월 수업료</div>
+                        <div style="font-size: 18px; color: #333; font-weight: 600;">주 2회 × 2가정<br>= 800,000원</div>
+                    </div>
+                    <div style="border-bottom: 2px solid #f0f0f0; padding-bottom: 15px; margin-bottom: 15px;">
+                        <div style="font-weight: 600; color: #666; margin-bottom: 8px;">플랫폼 수수료</div>
+                        <div style="font-size: 20px; color: #FF6B6B; font-weight: 700;">800,000원<br><span style="font-size: 14px;">(100% 전액)</span></div>
+                    </div>
+                    <div style="background: #FFF3F3; padding: 20px; border-radius: 12px; margin-bottom: 15px;">
+                        <div style="font-weight: 600; color: #666; margin-bottom: 8px;">선생님 실수령액</div>
+                        <div style="font-size: 24px; color: #FF6B6B; font-weight: 800;">0원</div>
+                    </div>
+                    <div style="text-align: center; color: #FF6B6B; font-weight: 700; font-size: 18px;">
+                        째깍홈티 대비 -800,000원 손해
+                    </div>
+                </div>
+
+                <!-- B사 -->
+                <div style="background: white; border-radius: 16px; padding: 25px; margin-bottom: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                    <h3 style="font-size: 20px; font-weight: 700; color: #333; margin-bottom: 20px; text-align: center;">B사</h3>
+                    <div style="border-bottom: 2px solid #f0f0f0; padding-bottom: 15px; margin-bottom: 15px;">
+                        <div style="font-weight: 600; color: #666; margin-bottom: 8px;">월 수업료</div>
+                        <div style="font-size: 18px; color: #333; font-weight: 600;">주 1회 × 2가정 방문</div>
+                    </div>
+                    <div style="border-bottom: 2px solid #f0f0f0; padding-bottom: 15px; margin-bottom: 15px;">
+                        <div style="font-weight: 600; color: #666; margin-bottom: 8px;">플랫폼 수수료</div>
+                        <div style="font-size: 20px; color: #FF6B6B; font-weight: 700;">600,000원<br><span style="font-size: 14px;">(75%)</span></div>
+                    </div>
+                    <div style="background: #FFF3F3; padding: 20px; border-radius: 12px; margin-bottom: 15px;">
+                        <div style="font-weight: 600; color: #666; margin-bottom: 8px;">선생님 실수령액</div>
+                        <div style="font-size: 24px; color: #333; font-weight: 800;">200,000원</div>
+                    </div>
+                    <div style="text-align: center; color: #FF6B6B; font-weight: 700; font-size: 18px;">
+                        째깍홈티 대비 -600,000원 손해
+                    </div>
+                </div>
+
+                <!-- 째깍홈티 -->
+                <div style="background: linear-gradient(135deg, #FFD93D 0%, #FFC837 100%); border-radius: 16px; padding: 25px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); position: relative;">
+                    <div style="position: absolute; top: 10px; right: 10px; background: #FF6B6B; padding: 6px 14px; border-radius: 12px; font-size: 12px; color: white; font-weight: 700;">BEST</div>
+                    <h3 style="font-size: 20px; font-weight: 700; color: #000; margin-bottom: 20px; text-align: center;">째깍홈티 (사전등록)</h3>
+                    <div style="border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 15px; margin-bottom: 15px;">
+                        <div style="font-weight: 600; color: #000; margin-bottom: 8px;">월 수업료</div>
+                        <div style="font-size: 18px; color: #000; font-weight: 600;">주 2회 × 2가정<br>= 800,000원</div>
+                    </div>
+                    <div style="border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 15px; margin-bottom: 15px;">
+                        <div style="font-weight: 600; color: #000; margin-bottom: 8px;">플랫폼 수수료</div>
+                        <div style="font-size: 20px; color: #4CAF50; font-weight: 700;">0원 ✨<br><span style="font-size: 14px; color: #000;">베타 기간 전액 무료</span></div>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.9); padding: 20px; border-radius: 12px; margin-bottom: 15px;">
+                        <div style="font-weight: 600; color: #000; margin-bottom: 8px;">선생님 실수령액</div>
+                        <div style="font-size: 28px; color: #FFB800; font-weight: 900;">800,000원 🎉</div>
+                    </div>
+                    <div style="text-align: center; color: #000; font-weight: 800; font-size: 20px;">
+                        최대 80만원 세이브 💰
+                    </div>
+                </div>
             </div>
 
             <div style="margin-top: 40px; padding: 30px; background: linear-gradient(135deg, #E8F8F7 0%, #D4F1F4 100%); border-radius: 16px; border-left: 5px solid #4ECDC4;">
