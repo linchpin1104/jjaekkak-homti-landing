@@ -42,16 +42,22 @@
     flex-direction: column;
     align-items: center;
     gap: 4px;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.promo-text > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4px;
 }
 
 .promo-emoji {
     font-size: 24px;
     animation: bounce 2s infinite;
-}
-
-.promo-text {
-    font-size: 16px;
-    line-height: 1.4;
+    margin-right: 4px;
 }
 
 .promo-highlight {
