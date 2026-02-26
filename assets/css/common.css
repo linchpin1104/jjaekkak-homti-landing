@@ -187,6 +187,50 @@ body {
 .mb-40 { margin-bottom: 40px; }
 .mb-60 { margin-bottom: 60px; }
 
+/* 플로팅 버튼 */
+.floating-cta {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    animation: floatBounce 2s infinite ease-in-out;
+}
+
+.floating-cta .btn {
+    padding: 18px 32px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 50px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.floating-cta .btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.25);
+}
+
+.parent-page .floating-cta .btn {
+    background: linear-gradient(135deg, #FFD93D 0%, #FFC837 100%);
+    color: #333;
+}
+
+.therapist-page .floating-cta .btn {
+    background: linear-gradient(135deg, #4ECDC4 0%, #44B8B0 100%);
+    color: white;
+}
+
+@keyframes floatBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
 /* 푸터 */
 .footer {
     background: #333;
@@ -274,6 +318,20 @@ body {
     
     .footer p {
         margin: 6px 0 !important;
+    }
+    
+    /* 플로팅 버튼 모바일 */
+    .floating-cta {
+        bottom: 15px !important;
+        right: 15px !important;
+        left: 15px !important;
+        text-align: center;
+    }
+    
+    .floating-cta .btn {
+        width: 100%;
+        padding: 16px 24px !important;
+        font-size: 15px !important;
     }
     
     /* 인라인 스타일 폰트 최적화 */
