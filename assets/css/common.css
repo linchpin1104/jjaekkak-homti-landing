@@ -191,13 +191,15 @@ body {
 .floating-cta {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 999;
+    text-align: center;
     animation: floatBounce 2s infinite ease-in-out;
 }
 
 .floating-cta .btn {
-    padding: 18px 32px;
+    padding: 18px 40px;
     font-size: 16px;
     font-weight: 700;
     border-radius: 50px;
@@ -205,6 +207,7 @@ body {
     text-decoration: none;
     display: inline-block;
     transition: all 0.3s ease;
+    white-space: nowrap;
 }
 
 .floating-cta .btn:hover {
@@ -224,10 +227,10 @@ body {
 
 @keyframes floatBounce {
     0%, 100% {
-        transform: translateY(0);
+        transform: translateX(-50%) translateY(0);
     }
     50% {
-        transform: translateY(-8px);
+        transform: translateX(-50%) translateY(-8px);
     }
 }
 
@@ -323,9 +326,10 @@ body {
     /* 플로팅 버튼 모바일 */
     .floating-cta {
         bottom: 15px !important;
-        right: 15px !important;
-        left: 15px !important;
-        text-align: center;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        width: calc(100% - 40px);
+        max-width: 400px;
     }
     
     .floating-cta .btn {
