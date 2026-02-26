@@ -159,21 +159,25 @@ body.therapist-page {
         font-size: 16px !important;
     }
     
-    .benefit-grid {
-        grid-template-columns: 1fr;
-        max-width: 400px;
-        margin: 0 auto;
+    .benefit-grid,
+    section > div[style*="grid-template-columns: repeat(2, 1fr)"] {
+        grid-template-columns: 1fr !important;
+        max-width: 400px !important;
+        margin: 0 auto !important;
     }
     
-    .benefit-card {
-        padding: 25px 18px !important;
+    .benefit-card,
+    section > div[style*="grid-template-columns: repeat(2, 1fr)"] > div {
+        padding: 30px 20px !important;
     }
     
-    .benefit-card h3 {
-        font-size: 16px !important;
+    .benefit-card h3,
+    section > div[style*="grid-template-columns: repeat(2, 1fr)"] > div h3 {
+        font-size: 18px !important;
     }
     
-    .benefit-card p {
+    .benefit-card p,
+    section > div[style*="grid-template-columns: repeat(2, 1fr)"] > div p {
         font-size: 13px !important;
         line-height: 1.6 !important;
     }
