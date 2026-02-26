@@ -14,14 +14,34 @@
     <!-- 사전신청 배너 -->
     <div class="promo-banner">
         <div class="promo-banner-content">
-            <span class="promo-emoji">🎉</span>
+            <span class="promo-emoji">⏰</span>
             <span class="promo-text">
+                <span class="promo-highlight" id="dday-counter">D-day</span>
                 <span class="promo-highlight">베타테스트 오픈 3월 22일</span>
-                사전등록 시
+                5월 중 본서비스 오픈 전까지
                 <span class="promo-highlight">수수료 100% 무료</span>
             </span>
         </div>
     </div>
+
+    <script>
+        // D-day 카운터 (3월 27일 11:59 기준)
+        function updateDday() {
+            const deadline = new Date('2026-03-27T23:59:00+09:00');
+            const now = new Date();
+            const diff = deadline - now;
+            
+            if (diff > 0) {
+                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                document.getElementById('dday-counter').textContent = `D-${days}`;
+            } else {
+                document.getElementById('dday-counter').textContent = '마감';
+            }
+        }
+        updateDday();
+        setInterval(updateDday, 60000); // 1분마다 업데이트
+    </script>
 
     <!-- 헤더 -->
     <header class="header">
@@ -368,7 +388,7 @@
     <!-- CTA 섹션 -->
     <section class="cta-section parent-cta">
         <div class="promotion-badge" style="font-size: 18px; padding: 16px 32px; margin-bottom: 20px;">
-            🎉 3월 말까지 사전등록 시
+            🎉 5월 중 본서비스 오픈 전까지
         </div>
         <h2 class="cta-title" style="font-size: 48px; margin-bottom: 30px;">
             수수료 100% 무료
@@ -391,7 +411,7 @@
             <div style="display: grid; gap: 20px;">
                 <div style="padding: 20px; background: #f8f9fa; border-radius: 12px; border-left: 4px solid #FFB800;">
                     <p style="font-size: 16px; font-weight: 700; color: #333; margin-bottom: 8px;">사전 등록 마감</p>
-                    <p style="font-size: 20px; font-weight: 800; color: #FFB800;">3월 31일 23:59까지</p>
+                    <p style="font-size: 20px; font-weight: 800; color: #FFB800;">3월 27일 11:59까지</p>
                 </div>
                 <div style="padding: 20px; background: #f8f9fa; border-radius: 12px; border-left: 4px solid #4ECDC4;">
                     <p style="font-size: 16px; font-weight: 700; color: #333; margin-bottom: 8px;">베타서비스 오픈</p>
