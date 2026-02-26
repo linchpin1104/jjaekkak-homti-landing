@@ -295,10 +295,10 @@
                 <h3 style="font-size: 24px; font-weight: 700; color: #FFB800; margin-bottom: 30px; text-align: center;">
                     📋 검증된 선생님 프로필
                 </h3>
-                <div class="image-scroll-container" style="background: #f8f9fa; padding: 20px; border-radius: 12px; margin-bottom: 20px; max-height: 500px; overflow-y: auto; border: 2px solid #e0e0e0;">
+                <div class="image-scroll-container" style="background: #f8f9fa; padding: 20px; border-radius: 12px; margin-bottom: 20px; max-height: 600px; overflow-y: auto; border: 2px solid #e0e0e0;">
                     <img src="../assets/images/teacher-profile-example.png" 
                          alt="선생님 프로필 예시" 
-                         style="width: 100%; display: block; border-radius: 8px;">
+                         style="width: 100%; height: auto; display: block; border-radius: 8px; image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;">
                 </div>
                 <div style="text-align: center; margin-bottom: 20px;">
                     <p style="font-size: 13px; color: #999;">↕️ 스크롤해서 전체 내용을 확인하세요</p>
@@ -318,10 +318,10 @@
                 <h3 style="font-size: 24px; font-weight: 700; color: #FFB800; margin-bottom: 30px; text-align: center;">
                     📝 매 수업 후 상세 노트
                 </h3>
-                <div class="image-scroll-container" style="background: #f8f9fa; padding: 20px; border-radius: 12px; margin-bottom: 20px; max-height: 500px; overflow-y: auto; border: 2px solid #e0e0e0;">
+                <div class="image-scroll-container" style="background: #f8f9fa; padding: 20px; border-radius: 12px; margin-bottom: 20px; max-height: 600px; overflow-y: auto; border: 2px solid #e0e0e0;">
                     <img src="../assets/images/class-note-example.png" 
                          alt="수업 노트 예시" 
-                         style="width: 100%; display: block; border-radius: 8px;">
+                         style="width: 100%; height: auto; display: block; border-radius: 8px; image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;">
                 </div>
                 <div style="text-align: center; margin-bottom: 20px;">
                     <p style="font-size: 13px; color: #999;">↕️ 스크롤해서 전체 내용을 확인하세요</p>
@@ -339,10 +339,20 @@
 
         <!-- 모바일 반응형 -->
         <style>
+            .image-scroll-container img {
+                image-rendering: -webkit-optimize-contrast;
+                image-rendering: crisp-edges;
+            }
+            
             @media (max-width: 768px) {
                 section > div[style*="grid-template-columns: 1fr 1fr"] {
                     grid-template-columns: 1fr !important;
                     gap: 30px !important;
+                }
+                
+                .image-scroll-container {
+                    max-height: 400px !important;
+                    padding: 15px !important;
                 }
             }
         </style>
