@@ -161,24 +161,33 @@ body.therapist-page {
     
     .benefit-grid,
     section > div[style*="grid-template-columns: repeat(2, 1fr)"] {
-        grid-template-columns: 1fr !important;
-        max-width: 400px !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        max-width: 100% !important;
         margin: 0 auto !important;
+        gap: 12px !important;
     }
     
     .benefit-card,
     section > div[style*="grid-template-columns: repeat(2, 1fr)"] > div {
-        padding: 30px 20px !important;
+        padding: 25px 15px !important;
+    }
+    
+    .benefit-card .icon,
+    section > div[style*="grid-template-columns: repeat(2, 1fr)"] > div .icon {
+        font-size: 40px !important;
+        margin-bottom: 10px !important;
     }
     
     .benefit-card h3,
     section > div[style*="grid-template-columns: repeat(2, 1fr)"] > div h3 {
-        font-size: 18px !important;
+        font-size: 17px !important;
+        margin-bottom: 8px !important;
     }
     
     .benefit-card p,
     section > div[style*="grid-template-columns: repeat(2, 1fr)"] > div p {
-        font-size: 13px !important;
+        font-size: 12px !important;
+        line-height: 1.5 !important;
         line-height: 1.6 !important;
     }
     
