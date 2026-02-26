@@ -127,6 +127,17 @@ body.parent-page {
         max-width: 500px;
     }
     
+    /* 솔루션 그리드 모바일 */
+    .solution-grid,
+    section > div[style*="grid-template-columns: repeat(auto-fit, minmax(180px"] {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px !important;
+    }
+    
+    section > div[style*="grid-template-columns: repeat(auto-fit, minmax(180px"] > div h3 {
+        font-size: 16px !important;
+    }
+    
     .profile-sample-btn {
         display: block !important;
         margin: 10px auto 0 !important;
